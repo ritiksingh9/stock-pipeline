@@ -6,8 +6,7 @@ An Airflow ETL pipeline that obtains daily stock-market JSON from Alpha Vantage,
 
 ```text
 Alpha Vantage API -> Airflow DAG -> PostgreSQL <- pgAdmin
-                                      ^
-                                      +-- Metabase (optional)
+                                      
 ```
 
 The DAG runs on weekdays at 18:00, creates one mapped task per ticker, retries transient failures twice, rejects rate-limit/API error responses clearly, skips malformed individual records, and uses an `ON CONFLICT` upsert so reruns do not duplicate rows.
