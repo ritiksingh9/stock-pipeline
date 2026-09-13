@@ -1,0 +1,13 @@
+{
+  "Servers": {
+    "1": {
+      "Name": "Stock Market Database",
+      "Group": "Servers",
+      "Host": "postgres",
+      "Port": 5432,
+      "MaintenanceDB": "stock_market",
+      "Username": "stock_user",
+      "SSLMode": "prefer"
+    }
+  }
+}
