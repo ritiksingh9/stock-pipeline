@@ -1,4 +1,3 @@
-"""Daily Alpha Vantage-to-PostgreSQL Airflow DAG."""
 from __future__ import annotations
 
 import sys
